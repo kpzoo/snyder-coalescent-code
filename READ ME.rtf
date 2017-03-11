@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 READ ME\
+\
+This folder contains m files related to Snyder filtering of deterministically time-varying coalescent models. The demographic functions are specified with parameters x_i and the joint posterior on these obtained via the Snyder filter. The code also simulates appropriate coalescent models and organises the coalescent times (and sample times) as observed data.\
+\
+The main scripts of interest are:\
+\
+runSnyCoal - runs Snyder simulations on isochronous demographic functions of choice\
+				- works for all the demographic functions in the manuscript\
+				- can specify new ones and simulate via rejection sampling (getCoalData)\
+runSnyCoalHet - runs Snyder simulations on heterochronous functions of choice\
+				- code is only for con-exp-con at the moment\
+				- other heterochronous functions must be suitable simulated\
+\
+The snyderCoal and snyderCoalHet functions perform the actual filtering with use of odeSnyderCoal for setting up the ODEs to be integrated.\
+\
+The data folder contains some plots generated with this code and used in the manuscript (which also details the Snyder filter):\
+\
+Optimal Point Process Filtering and Estimation of the Coalescent Process - Parag, KV and Pybus, OG. Currently under review at the Journal of Theoretical Biology.
+\f1 \expnd0\expndtw0\kerning0
+\
+}
