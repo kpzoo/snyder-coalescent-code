@@ -26,7 +26,7 @@ disp(['Simulating ' num2str(M) ' trees']);
 n = 200;
 nData = n - 1; % no. coalescent events
 % Get function and grid limits
-fnid = 5;
+fnid = 2;
 [xmin, xmax, fnname, fn1, fn2, numRV] = setDemogFn2(fnid, n);
 
 % Function identifier structure
